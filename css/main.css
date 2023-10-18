@@ -5,7 +5,11 @@
 html,body{
     background-color: #e6ccb2;
 }
-
+#mini-banner {
+    position: relative;
+    z-index: 2; /* Certifica-se de que os cards estejam acima do slider */
+    margin-top: -120px; /* Ajuste conforme necessário para a posição desejada */
+}
 .bg-color-header{
     background: #ddb892;
 }
@@ -29,6 +33,19 @@ html,body{
     font-weight: 500;
     
 }
-.form-control{
-    width: 6rem;
+#mini-banners .card {
+    margin-top: -80px; 
+}
+
+.carousel-caption h5,
+.carousel-caption .btn {
+    margin-bottom: 0; 
+}
+
+.carousel-caption {
+    top: 30%; 
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; 
 }
